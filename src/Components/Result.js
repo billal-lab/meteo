@@ -12,7 +12,7 @@ export default class Result extends Component{
   componentDidMount(){
     let url = "https://api.openweathermap.org/data/2.5/find?q="
     let town = this.props.name
-    let key = "&appid=969482ed24d9a251bc2c5f467bd95fd5"
+    let key = "&appid=Yourkeys"
     fetch(url+town+key)
       .then(response => response.json())
       .then(data => this.conroleQuery(data))
